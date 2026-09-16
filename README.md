@@ -5,7 +5,7 @@ boards, cross-project analytics, calendar-aware planning, a sticky-note wall and
 layer — running on Railway with its SQLite database on a volume, behind an Owner account created
 before the public port ever opens.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/scrumboy)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/scrumboy-1)
 
 ## Service
 
@@ -122,6 +122,15 @@ Upstream ships a `recover-owner` command that resets the Owner's password agains
 database. It reads the password from stdin and refuses it in `argv`. It needs the service stopped,
 so on Railway it is a local operation against a downloaded volume backup rather than something you
 run in place.
+
+## Relation to the other Scrumboy template
+
+The marketplace already carries a third-party `scrumboy` template that builds upstream's repository
+directly. This one is a different thing and deliberately so: it pins a release rather than tracking
+the default branch, ships a public domain and a `/healthz` healthcheck, sizes the volume instead of
+taking the plan default, generates and persists the encryption key, and — the reason it exists —
+claims the Owner account before the public port opens. The other template declares no variables, so
+a deployment made from it hands ownership to whoever reaches the URL first.
 
 ## Upgrading
 
