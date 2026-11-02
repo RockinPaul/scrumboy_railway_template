@@ -11,7 +11,7 @@ before the public port ever opens.
 
 | Service | Base | Public | Role |
 |---|---|---|---|
-| `scrumboy` | `ghcr.io/markrai/scrumboy:3.34.0` | **yes** | The whole app: boards, analytics, calendar, wall, REST API, MCP server. |
+| `scrumboy` | `ghcr.io/markrai/scrumboy:3.40.3` | **yes** | The whole app: boards, analytics, calendar, wall, REST API, MCP server. |
 
 One service, one volume, no database container. Upstream ships a static cgo-free Go binary and
 stores everything in SQLite, so the finished image is 44 MB and boots in about two seconds.

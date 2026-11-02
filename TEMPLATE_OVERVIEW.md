@@ -55,7 +55,7 @@ any of them.
 ### Deployment Dependencies
 
 - Upstream project: [markrai/scrumboy](https://github.com/markrai/scrumboy) (AGPL-3.0), image
-  `ghcr.io/markrai/scrumboy:3.34.0`.
+  `ghcr.io/markrai/scrumboy:3.40.3`.
 - Upstream documentation:
   [markrai/scrumboy docs](https://github.com/markrai/scrumboy/tree/main/docs).
 - Template source:

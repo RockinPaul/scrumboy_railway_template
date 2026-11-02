@@ -13,7 +13,7 @@
 # whoever calls /api/auth/bootstrap first on an empty database, and until that
 # call lands the API answers anonymous reads *and writes*. On a public URL that
 # is a land grab. See entrypoint.sh.
-ARG SCRUMBOY_VERSION=3.34.0
+ARG SCRUMBOY_VERSION=3.40.3
 FROM ghcr.io/markrai/scrumboy:${SCRUMBOY_VERSION}
 
 # curl for the loopback bootstrap (it can read a body from stdin, so the
